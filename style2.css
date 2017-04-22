@@ -1,0 +1,55 @@
+/* SLIDER STRUCTURE */
+
+#slider {
+   background: #000;
+   border: 5px solid #eaeaea;
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+   height: 320px;
+   width: 680px;
+   margin: 40px auto 0;
+   overflow: visible;
+   position: relative;
+}
+/* HIDE ALL OUTSIDE OF THE SLIDER */
+
+#mask {
+   overflow: hidden;
+   height: 320px; 
+}
+
+/* IMAGE LIST */
+
+#slider ul {
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+
+#slider li { 
+   width: 680px;  /* Width Image */
+   height: 320px; /* Height Image */
+   position: absolute;
+   top: -325px;	/* Original Position - Outside of the Slider */
+   list-style: none;
+}
+
+#slider li.firstanimation {
+   animation: cycle 25s linear infinite;		
+}
+
+#slider li.secondanimation {
+   animation: cycletwo 25s linear infinite;	
+}
+
+#slider li.thirdanimation {
+   animation: cyclethree 25s linear infinite;		
+}
+
+#slider li.fourthanimation {
+   animation: cyclefour 25s linear infinite;		
+}
+
+#slider li.fifthanimation {
+   animation: cyclefive 25s linear infinite;		
+}
+
